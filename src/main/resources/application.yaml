@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: student-servlet
+  datasource:
+    url: ${POSTGRES_DB:jdbc:postgresql://192.168.99.19:9094/reviewapp}
+    username: ${POSTGRES_USER:reviewapp-admin}
+    password: ${POSTGRES_PASSWORD:jk8LS!sAx5}
+  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
