@@ -1,10 +1,10 @@
 package ru.clevertec.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "customer_product", schema = "servlet")
 @Getter
 @Setter
 @ToString
@@ -12,6 +12,8 @@ import lombok.*;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "customer_product", schema = "servlet")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class CustomerProduct {
 
     @Id

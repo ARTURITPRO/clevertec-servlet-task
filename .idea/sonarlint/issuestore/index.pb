@@ -23,3 +23,5 @@ Asrc/main/java/ru/clevertec/repository/DiscountCardRepository.java,6\0\60b34b01
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 S
 #src/main/resources/application.yaml,8\b\8bf9a0c76cee89021a19081a2d70237db7e2fd8a
+^
+.src/main/java/ru/clevertec/entity/Product.java,d\f\dfa10a4507151e3f8e007d4fac0de58794c8a214

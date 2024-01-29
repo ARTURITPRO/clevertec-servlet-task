@@ -1,12 +1,12 @@
 package ru.clevertec.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "product", schema = "servlet")
 @Getter
 @Setter
 @ToString
@@ -14,6 +14,8 @@ import java.math.BigDecimal;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "product", schema = "servlet")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Product {
 
     @Id
